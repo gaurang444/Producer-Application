@@ -1,15 +1,10 @@
 package com.gaurang.myproject;
 
-import java.util.concurrent.Flow.Publisher;
 
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.google.gson.Gson;
 
@@ -23,6 +18,11 @@ public class HelloworldController {
 	
 	@Value("${jsa.rabbitmq.routingkey}")
 	private String routingKey;
+
+	@GetMapping("/hello")
+	public String hello(){
+		return "Hello";
+	}
 	
     @PostMapping(path = "/fanout")
 	public MainObject FanoutsendMessage(@RequestBody MainObject msg){
