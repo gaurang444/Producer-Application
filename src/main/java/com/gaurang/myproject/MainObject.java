@@ -1,9 +1,7 @@
 package com.gaurang.myproject;
-import java.util.*;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import java.util.List;
+
 public class MainObject {
 	private String orderid;
 	private List<Products> products;
@@ -32,11 +30,7 @@ public class MainObject {
 	public void setRp(Recipent rp) {
 		this.rp = rp;
 	}
-	
-	
-	
-	
-	
-	
+
+
 
 }
