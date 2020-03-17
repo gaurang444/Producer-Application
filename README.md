@@ -3,8 +3,6 @@
 rabbit mq and finally consumer application will consume the message</h3><br>
 
 
-<h6>I will Update the Proper Documentaion and Mysql table relationship and structure by today 2pm<h6>
-
 <h4>Steps to Run the application</h4><br>
 1)Install Java and STS IDE<br>
 2)Download/clone bith Producer-Application and Consumer Application in STS IDE.<br>
